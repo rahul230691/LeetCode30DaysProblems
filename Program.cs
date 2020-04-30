@@ -23,12 +23,18 @@ namespace LeetCode.Problems
             //Console.WriteLine($"Input number {input2} is {result2}");
 
             //Problem 3
-            int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-            var result = FindMaximumSubarray.GetMaximumSubArray(nums);
-            Console.WriteLine($"Maximun SubArray is [{string.Join(",", result.Item1.ToArray())}] from [{string.Join(",", nums)}] array.");
-            Console.WriteLine($"Sum of Maximun SubArray is [{result.Item2}] from [{string.Join(",", nums)}] array.");
+            //int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            //var result = FindMaximumSubarray.GetMaximumSubArray(nums);
+            //Console.WriteLine($"Maximun SubArray is [{string.Join(",", result.Item1.ToArray())}] from [{string.Join(",", nums)}] array.");
+            //Console.WriteLine($"Sum of Maximun SubArray is [{result.Item2}] from [{string.Join(",", nums)}] array.");
             //Console.WriteLine(string.Join(",", result.Item1.ToArray()));
             //Console.WriteLine(result.Item2);
+
+            /* Problem 4 - Move Zeros */
+            int[] nums = { 0, 1, 0, 3, 12 };
+            Console.WriteLine($"Input Array => [{string.Join(",", nums)}].");
+            var outputArray = Problem4_MoveZeros.GetMovedZerosArray(nums);
+            Console.WriteLine($"Output Array => [{string.Join(",", outputArray)}].");
             Console.ReadLine();
         }
     }

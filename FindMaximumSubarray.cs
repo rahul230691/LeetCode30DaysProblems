@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LeetCode.Problems
 {
@@ -30,9 +29,13 @@ namespace LeetCode.Problems
                 }                    
             }
             List<int> resultArray= new List<int>();
+            int result_to_return = 0;
             for (int j = start; j <= end; j++)
+            {
+                result_to_return += nums[j];
                 resultArray.Add(nums[j]);
-            return Tuple.Create(resultArray, maximum_so_far);
+            }
+            return Tuple.Create(resultArray, result_to_return);
         }
     }
 }
